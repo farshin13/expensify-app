@@ -12,16 +12,16 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'water bill melina', amount: 4500})) ;
-store.dispatch(addExpense({ description: 'Gas bill melina' , amount: 3600}));
-store.dispatch(addExpense({ description: 'Rent melina', amount: 2500})) ;
+//store.dispatch(addExpense({ description: 'water bill melina', amount: 4500})) ;
+//store.dispatch(addExpense({ description: 'Gas bill melina' , amount: 3600}));
+//store.dispatch(addExpense({ description: 'Rent melina', amount: 2500})) ;
 
 
 
-const state = store.getState();
-console.log(state);
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
+//const state = store.getState();
+//console.log(state);
+//const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+//console.log(visibleExpenses);
 
 const jsx = (
  <Provider  store={store}>
